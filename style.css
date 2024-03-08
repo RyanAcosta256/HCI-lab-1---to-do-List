@@ -60,6 +60,7 @@ body {
     
 }
 
+
 #groupOfInputs {
     display: flex;
     flex-direction: row; /* Adjust to column layout */

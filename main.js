@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     addButton.addEventListener("click", function() {
         var taskValue = taskInput.value;
         var dateValue = dateInput.value;
+        var errorMessage = document.getElementById("errorMessage"); // Get the error message paragraph
 
         if (taskValue && dateValue) {
             // Create a new LI element
@@ -62,8 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
             // Clear the input fields
             taskInput.value = "";
             dateInput.value = "";
+
+            // Clear the error message
+            errorMessage.textContent = "";
         } else {
-            alert("Please enter both task and date.");
+            // Update the error message
+            errorMessage.textContent = "Please enter both task and date.";
         }
     });
 
