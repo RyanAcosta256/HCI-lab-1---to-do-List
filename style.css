@@ -1,0 +1,102 @@
+body {
+    background-color: #1D2228;
+    margin: 0; /* Remove default body margin */
+}
+
+#flexContainer {
+    display: flex;
+    flex-direction: column; /* Change to column layout to stack sections vertically */
+    justify-content: space-around;
+    height: 100vh; /* Set to 100% of viewport height */
+}
+
+#part_1 {
+    display: flex;
+    flex-direction: column;
+    background: rgb(56, 36, 36);
+    border-radius: 10px;
+    flex-grow: 1;
+    align-items: stretch;
+    /* Remove fixed height */
+}
+
+#title {
+    flex-grow: 4;
+    background: #FB8122;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head1{
+    align-self: center;
+    font-size: 350px;
+}
+
+.head2{
+    align-self: center;
+    font-size: 150px;
+}
+
+.head3{
+    align-self: center;
+    font-size: 250px;
+}
+
+/* ABOVE PART 1*/
+
+#part_2{
+    align-items: stretch;
+    align-self: center;
+    background: #E1E2E2;
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-direction: row; /* Adjust to column layout */
+    justify-content: center; /* Center content both vertically and horizontally */
+    text-align: center; /* Center inline children horizontally */
+    width: 500px;
+    
+}
+
+
+#groupOfInputs {
+    display: flex;
+    flex-direction: row; /* Adjust to column layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#Mtask{
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+#addT{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    height: 55px;
+    text-align: center;
+}
+#addD{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+#list{
+    text-align: center;
+}
+#to-dos{
+    background: #4a92d4;
+    border-radius: 10px;
+    text-size-adjust: 80px;
+}
